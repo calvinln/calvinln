@@ -1,0 +1,25 @@
+{
+  "name": "calvinln",
+  "version": "1.0.0",
+  "description": "My personal website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'no tests'",
+    "start": "parcel --no-cache index.html",
+    "deploy": "parcel build --no-cache index.html && firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calvinln/calvinln.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calvinln/calvinln/issues"
+  },
+  "homepage": "https://github.com/calvinln/calvinln#readme",
+  "devDependencies": {
+    "firebase-tools": "^3.19.3",
+    "parcel-bundler": "^1.9.7"
+  }
+}

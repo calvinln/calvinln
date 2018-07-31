@@ -62,7 +62,7 @@ hr {
 .more-about-me {
   margin: 15px auto;
   font-size: 15px;
-  font-weight: 300;
+  opacity: 0.8;
 }
 
 .project-description {
@@ -148,4 +148,9 @@ a:hover {
 #text-holder {
   width: 780px;
   margin: 35px auto;
+}
+
+.nav-option:hover {
+  color: #000000;
+  cursor: pointer;
 }

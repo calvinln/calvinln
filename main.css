@@ -4,6 +4,11 @@ body {
   color: #555d6d;
 }
 
+.container {
+  max-width: 1200px;
+  min-width: 320px;
+}
+
 a:not(:last-child):after,
 span:not(:last-child):after {
   content: '/';
@@ -14,74 +19,11 @@ span:not(:last-child):after {
 .reference-links a:not(:last-child)::after {
   content: '/';
   margin: 0 0.5rem;
-  color: 0076ff;
-}
-.row {
-  margin-top: 15px;
+  color: #0076ff;
 }
 
-.info {
-  margin-top: 40px;
-  font-family: 'Muli', sans-serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #000000;
-}
-
-.project {
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06), 0 0 2px 1px rgba(0, 0, 0, 0.03);
-  transition: box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project:hover {
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.06), 0 0 7px rgba(0, 0, 0, 0.03);
-}
-
-img {
-  width: 100%;
-}
-
-hr {
-  margin-bottom: 10px;
-  border: 0;
-  height: 0;
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.container {
-  max-width: 1200px;
-}
-
-#project-title {
-  margin-bottom: 5px;
-}
-
-.more-about-me {
-  margin: 15px auto;
-  font-size: 15px;
-  opacity: 0.8;
-}
-
-.project-description {
-  /*original = height: 125px; */
-  height: 135px;
-  width: 85%;
-  margin: 0 auto;
-}
-
-#project-title {
-  font-family: 'Miriam Libre', sans-serif;
-  opacity: 0.7;
-  margin-bottom: 10px;
-}
-
-.project {
-  max-width: 380px;
-  margin: 12px auto;
-  border-radius: 4px;
+.letter-space {
+  letter-spacing: 0.2px;
 }
 
 a {
@@ -93,13 +35,20 @@ a:hover {
   color: black;
 }
 
+.hide {
+  display: none;
+}
+
 #name {
+  margin-top: 15px;
+}
+
+#name a {
   text-decoration: none;
   padding-bottom: 0.3rem;
   border-bottom: 2px solid #555d6d;
-  color: #555d6d;
-  font-weight: 700;
   font-family: 'Muli', sans-serif;
+  font-weight: 700;
 }
 
 #name:hover {
@@ -107,9 +56,54 @@ a:hover {
   border-bottom-color: black;
 }
 
+.nav-option:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.info {
+  margin-top: 40px;
+  font-family: 'Muli', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: black;
+}
+
+.more-about-me {
+  margin: 15px auto;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.project-section {
+  margin-top: 50px;
+}
+
+.project {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06), 0 0 2px 1px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: 450px;
+  margin: 12px auto;
+  border-radius: 4px;
+}
+
+.project:hover {
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.06), 0 0 7px rgba(0, 0, 0, 0.03);
+}
+
+img {
+  width: 100%;
+}
+
+#project-header {
+  font-family: 'Miriam Libre', sans-serif;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
 .project-title {
   font-family: 'Muli', sans-serif;
-  color: #000000;
+  color: black;
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 1px;
@@ -117,30 +111,28 @@ a:hover {
   line-height: 1.6rem;
 }
 
-.project-description p:first-of-type {
+.project-text {
+  /*original = height: 125px; */
+  height: 135px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.project-text p {
   font-family: 'Miriam Libre', sans-serif;
-  color: #000000;
+  color: black;
   opacity: 0.54;
   font-size: 0.9rem;
   margin: 0;
   line-height: 1.5rem;
 }
 
-.no-underline a {
-  text-decoration: none;
-}
-
-.letter-space {
-  letter-spacing: 0.2px;
-}
-
-.project-description p {
-  font-size: 15px;
-  /* margin: 0 0 24px; */
-}
-
-.project-section {
-  margin-top: 50px;
+hr {
+  margin-bottom: 10px;
+  border: 0;
+  height: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .footer {
@@ -149,16 +141,7 @@ a:hover {
   padding-top: 25px;
 }
 
-.hide {
-  display: none;
-}
-
 #text-holder {
   width: 780px;
   margin: 35px auto;
-}
-
-.nav-option:hover {
-  color: #000000;
-  cursor: pointer;
 }

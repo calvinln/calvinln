@@ -2,15 +2,20 @@ body {
   font-size: 16px;
   font-family: 'Miriam Libre', sans-serif;
   color: #555d6d;
-  /* background-color: lightblue; */
 }
 
-a:not(:last-child):after {
+a:not(:last-child):after,
+span:not(:last-child):after {
   content: '/';
   margin: 0 1rem;
   color: #0076ff;
 }
 
+.reference-links a:not(:last-child)::after {
+  content: '/';
+  margin: 0 0.5rem;
+  color: 0076ff;
+}
 .row {
   margin-top: 15px;
 }
@@ -56,11 +61,13 @@ hr {
 
 .more-about-me {
   margin: 15px auto;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .project-description {
-  height: 125px;
+  /*original = height: 125px; */
+  height: 135px;
   width: 85%;
   margin: 0 auto;
 }
@@ -73,7 +80,7 @@ hr {
 
 a {
   text-decoration: none;
-  color: lightslategray;
+  color: #555d6d;
 }
 
 a:hover {
@@ -82,8 +89,10 @@ a:hover {
 
 #name {
   text-decoration: none;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   border-bottom: 2px solid #555d6d;
+  color: #555d6d;
+  /* font-weight: bold; */
 }
 
 #name:hover {
@@ -91,9 +100,22 @@ a:hover {
   border-bottom-color: black;
 }
 
-h5 {
-  margin-top: 10px;
-  font-weight: bold;
+.project-title {
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1px;
+  padding: 1rem 0;
+  line-height: 1.6rem;
+}
+
+.project-description p:first-of-type {
+  font-family: 'Miriam Libre', sans-serif;
+  color: #000000;
+  opacity: 0.54;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5rem;
 }
 
 .no-underline a {
@@ -101,19 +123,29 @@ h5 {
 }
 
 .letter-space {
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
 }
 
 .project-description p {
   font-size: 15px;
+  /* margin: 0 0 24px; */
 }
 
 .project-section {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .footer {
   margin-top: 5px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 25px;
+}
+
+.hide {
+  display: none;
+}
+
+#text-holder {
+  width: 780px;
+  margin: 35px auto;
 }

@@ -21,6 +21,11 @@ span:not(:last-child):after {
   color: #0076ff;
 }
 
+.project-links a,
+.footer a {
+  text-decoration: none;
+}
+
 .letter-space {
   letter-spacing: 0.5px;
 }

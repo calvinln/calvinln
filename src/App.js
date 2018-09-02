@@ -92,10 +92,6 @@ class App extends Component {
           <div className="col-12 text-center letter-space">
             <a href="mailto:me@calvinln.com">Email</a>
             <span className="separator">/</span>
-            <a href="https://drive.google.com/file/d/1_QhsVHQNqXjp_I3mPGtHsDvz2liCLfXy/view?usp=sharing">
-              Resume
-            </a>
-            <span className="separator">/</span>
             <a href="https://www.linkedin.com/in/calvinln/">Linkedin</a>
             <span className="separator">/</span>
             <a href="https://github.com/calvinln">Github</a>

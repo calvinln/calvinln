@@ -10,7 +10,7 @@ function Project(props) {
       <div className="project">
         <div className="project-image">
           <a href={props.demo_link}>
-            <img src={props.img} />
+            <img src={props.img} alt="" />
           </a>
         </div>
         <div className="project-text">
